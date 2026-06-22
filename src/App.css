@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.counter-card {
+  background: white;
+  padding: 36px 48px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  min-width: 240px;
+}
+
+.counter-card h1 {
+  margin: 0 0 12px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #888;
+}
+
+.count-display {
+  font-size: 64px;
+  font-weight: 800;
+  margin: 0 0 24px;
+  line-height: 1;
+  color: #2d3748;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.1s ease, box-shadow 0.2s ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reset {
+  width: auto;
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: scale(0.92);
+}
+
+.plus {
+  background: #48bb78;
+  color: white;
+  box-shadow: 0 6px 14px rgba(72, 187, 120, 0.35);
+}
+
+.minus {
+  background: #f56565;
+  color: white;
+  box-shadow: 0 6px 14px rgba(245, 101, 101, 0.35);
+}
+
+.reset {
+  background: #edf2f7;
+  color: #4a5568;
+}
